@@ -1,0 +1,533 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="жиквери.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="search-suggest">
+    <input name="utf8" type="hidden" value="✓">
+    <input type="text" name="q" id="q" size="60" class="search-suggest___field" placeholder="Поиск заказов">
+    <i class="search-suggest__icon icon_search"></i>
+    <div class="search_options">
+        <div class="dropdown_inline js-vacancies-search-dropdown">
+            <span class="toggler">Искать везде<span class="icon-Arrow icon icon-expand_more"></span></span>
+            <span class="tnx">Cпасибо</span>
+            <div class="popup">
+                <div class="popup_inner">
+                    <div class="checkbox_list">
+                        <label class="checkbox_flat" for="fields_checkbox_tags">
+                            <input type="checkbox" name="fields[tags]" id="fields_checkbox_tags" value="1">
+                            <span class="checkbox__label">по тэгам</span>
+                        </label>
+                        <label class="checkbox_flat" for="fields_checkbox_title">
+                            <input type="checkbox" name="fields[title]" id="fields_checkbox_title" value="1">
+                            <span class="checkbox__label">в названиях заказов</span>
+                        </label>
+                        <label class="checkbox_flat" for="fields_checkbox_description">
+                            <input type="checkbox" name="fields[description]" id="fields_checkbox_description" value="1">
+                            <span class="checkbox__label">в описаниях заказов</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class='donate'>
+    <dt class="layout-block__title">Помочь проекту</dt>
+    <div class='info'>
+      <div style='margin: 0px 0px 8px 0px;'>Я буду очень благодарен если хоть как-то оцените проделанную работу.</div>
+      <div>Вы можете пожертвовать: <a href='#' class='donate_info'>реквизиты</a></div>
+      <div style='padding: 8px 0px; border-bottom: 1px solid #eceeef;'>Спасибо за помощь!</div>
+      <div style='margin: 8px 0px 2px 0px;'>Репозиторий проекта: <b><a href='#' class='github_info'>Freelansim</a></b></div>
+      <div>Мой телеграм: <a href='#' class='telegram_me'>@JSusDev</a></div>
+      <div>Мой телеграм канал: <a href='#' class='telegram_channel'>@JSusDevs</a></div>
+      <div class='github_me' style='margin: 8px 0px;'>
+        <div><b>by JSus</b></div>
+        <img src="https://jsusdev.github.io/home-page/logo/logo_40.png" alt="">
+      </div>
+      <a class="btn_grey" id="donate_hide" href="#">Скрыть</a>
+    </div>
+  </div>
+
+  <dl class="layout-block layout-block_categories">
+  <dt class="layout-block__title">Сфера деятельности</dt>
+  <dd class="layout-block__content">
+      <ul class="category-group">
+          <li class="category-group__folder">
+              <div class="category-group__name checkbox_flat">
+                  <div class="checkbox_pseudo js-checkbox_group"></div>
+                  <span class="link_dotted js-toggle">Разработка</span>
+              </div>
+              <ul class="sub-categories">
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_all_inclusive">
+                          <input type="checkbox" name="category[]" id="category_development_all_inclusive" value="development_all_inclusive">
+                          <span class="checkbox__label">Сайты «под ключ»</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_backend">
+                          <input type="checkbox" name="category[]" id="category_development_backend" value="development_backend">
+                          <span class="checkbox__label">Бэкенд</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_frontend">
+                          <input type="checkbox" name="category[]" id="category_development_frontend" value="development_frontend">
+                          <span class="checkbox__label">Фронтенд</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_prototyping">
+                          <input type="checkbox" name="category[]" id="category_development_prototyping" value="development_prototyping">
+                          <span class="checkbox__label">Прототипирование</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_ios">
+                          <input type="checkbox" name="category[]" id="category_development_ios" value="development_ios">
+                          <span class="checkbox__label">iOS</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_android">
+                          <input type="checkbox" name="category[]" id="category_development_android" value="development_android">
+                          <span class="checkbox__label">Android</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_desktop">
+                          <input type="checkbox" name="category[]" id="category_development_desktop" value="development_desktop">
+                          <span class="checkbox__label">Десктопное ПО</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_bots">
+                          <input type="checkbox" name="category[]" id="category_development_bots" value="development_bots">
+                          <span class="checkbox__label">Боты и парсинг данных</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_games">
+                          <input type="checkbox" name="category[]" id="category_development_games" value="development_games">
+                          <span class="checkbox__label">Разработка игр</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_1c_dev">
+                          <input type="checkbox" name="category[]" id="category_development_1c_dev" value="development_1c_dev">
+                          <span class="checkbox__label">1С-программирование</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_scripts">
+                          <input type="checkbox" name="category[]" id="category_development_scripts" value="development_scripts">
+                          <span class="checkbox__label">Скрипты и плагины</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_development_other">
+                          <input type="checkbox" name="category[]" id="category_development_other" value="development_other">
+                          <span class="checkbox__label">Разное</span>
+                      </label>
+                  </li>
+              </ul>
+          </li>
+          <li class="category-group__folder">
+              <div class="category-group__name checkbox_flat">
+                  <div class="checkbox_pseudo js-checkbox_group"></div>
+                  <span class="link_dotted js-toggle">Тестирование</span>
+              </div>
+              <ul class="sub-categories">
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_testing_sites">
+                          <input type="checkbox" name="category[]" id="category_testing_sites" value="testing_sites">
+                          <span class="checkbox__label">Сайты</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_testing_mobile">
+                          <input type="checkbox" name="category[]" id="category_testing_mobile" value="testing_mobile">
+                          <span class="checkbox__label">Мобайл</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_testing_software">
+                          <input type="checkbox" name="category[]" id="category_testing_software" value="testing_software">
+                          <span class="checkbox__label">Софт</span>
+                      </label>
+                  </li>
+              </ul>
+          </li>
+          <li class="category-group__folder">
+              <div class="category-group__name checkbox_flat">
+                  <div class="checkbox_pseudo js-checkbox_group"></div>
+                  <span class="link_dotted js-toggle">Администрирование</span>
+              </div>
+              <ul class="sub-categories">
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_admin_servers">
+                          <input type="checkbox" name="category[]" id="category_admin_servers" value="admin_servers">
+                          <span class="checkbox__label">Серверы</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_admin_network">
+                          <input type="checkbox" name="category[]" id="category_admin_network" value="admin_network">
+                          <span class="checkbox__label">Компьютерные сети</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_admin_databases">
+                          <input type="checkbox" name="category[]" id="category_admin_databases" value="admin_databases">
+                          <span class="checkbox__label">Базы данных</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_admin_security">
+                          <input type="checkbox" name="category[]" id="category_admin_security" value="admin_security">
+                          <span class="checkbox__label">Защита ПО и безопасность</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_admin_other">
+                          <input type="checkbox" name="category[]" id="category_admin_other" value="admin_other">
+                          <span class="checkbox__label">Разное</span>
+                      </label>
+                  </li>
+              </ul>
+          </li>
+          <li class="category-group__folder">
+              <div class="category-group__name checkbox_flat">
+                  <div class="checkbox_pseudo js-checkbox_group"></div>
+                  <span class="link_dotted js-toggle">Дизайн</span>
+              </div>
+              <ul class="sub-categories">
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_sites">
+                          <input type="checkbox" name="category[]" id="category_design_sites" value="design_sites">
+                          <span class="checkbox__label">Сайты</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_landings">
+                          <input type="checkbox" name="category[]" id="category_design_landings" value="design_landings">
+                          <span class="checkbox__label">Лендинги</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_logos">
+                          <input type="checkbox" name="category[]" id="category_design_logos" value="design_logos">
+                          <span class="checkbox__label">Логотипы</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_illustrations">
+                          <input type="checkbox" name="category[]" id="category_design_illustrations" value="design_illustrations">
+                          <span class="checkbox__label">Рисунки и иллюстрации</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_mobile">
+                          <input type="checkbox" name="category[]" id="category_design_mobile" value="design_mobile">
+                          <span class="checkbox__label">Мобильные приложения</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_icons">
+                          <input type="checkbox" name="category[]" id="category_design_icons" value="design_icons">
+                          <span class="checkbox__label">Иконки</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_polygraphy">
+                          <input type="checkbox" name="category[]" id="category_design_polygraphy" value="design_polygraphy">
+                          <span class="checkbox__label">Полиграфия</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_banners">
+                          <input type="checkbox" name="category[]" id="category_design_banners" value="design_banners">
+                          <span class="checkbox__label">Баннеры</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_graphics">
+                          <input type="checkbox" name="category[]" id="category_design_graphics" value="design_graphics">
+                          <span class="checkbox__label">Векторная графика</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_corporate_identity">
+                          <input type="checkbox" name="category[]" id="category_design_corporate_identity" value="design_corporate_identity">
+                          <span class="checkbox__label">Фирменный стиль</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_presentations">
+                          <input type="checkbox" name="category[]" id="category_design_presentations" value="design_presentations">
+                          <span class="checkbox__label">Презентации</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_modeling">
+                          <input type="checkbox" name="category[]" id="category_design_modeling" value="design_modeling">
+                          <span class="checkbox__label">3D</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_animation">
+                          <input type="checkbox" name="category[]" id="category_design_animation" value="design_animation">
+                          <span class="checkbox__label">Анимация</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_photo">
+                          <input type="checkbox" name="category[]" id="category_design_photo" value="design_photo">
+                          <span class="checkbox__label">Обработка фото</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_design_other">
+                          <input type="checkbox" name="category[]" id="category_design_other" value="design_other">
+                          <span class="checkbox__label">Разное</span>
+                      </label>
+                  </li>
+              </ul>
+          </li>
+          <li class="category-group__folder">
+              <div class="category-group__name checkbox_flat">
+                  <div class="checkbox_pseudo js-checkbox_group"></div>
+                  <span class="link_dotted js-toggle">Контент</span>
+              </div>
+              <ul class="sub-categories">
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_copywriting">
+                          <input type="checkbox" name="category[]" id="category_content_copywriting" value="content_copywriting">
+                          <span class="checkbox__label">Копирайтинг</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_rewriting">
+                          <input type="checkbox" name="category[]" id="category_content_rewriting" value="content_rewriting">
+                          <span class="checkbox__label">Рерайтинг</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_audio">
+                          <input type="checkbox" name="category[]" id="category_content_audio" value="content_audio">
+                          <span class="checkbox__label">Расшифровка аудио и видео</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_article">
+                          <input type="checkbox" name="category[]" id="category_content_article" value="content_article">
+                          <span class="checkbox__label">Статьи и новости</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_scenarios">
+                          <input type="checkbox" name="category[]" id="category_content_scenarios" value="content_scenarios">
+                          <span class="checkbox__label">Сценарии</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_naming">
+                          <input type="checkbox" name="category[]" id="category_content_naming" value="content_naming">
+                          <span class="checkbox__label">Нейминг и слоганы</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_correction">
+                          <input type="checkbox" name="category[]" id="category_content_correction" value="content_correction">
+                          <span class="checkbox__label">Редактура и корректура</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_translations">
+                          <input type="checkbox" name="category[]" id="category_content_translations" value="content_translations">
+                          <span class="checkbox__label">Переводы</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_coursework">
+                          <input type="checkbox" name="category[]" id="category_content_coursework" value="content_coursework">
+                          <span class="checkbox__label">Рефераты, дипломы, курсовые</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_specification">
+                          <input type="checkbox" name="category[]" id="category_content_specification" value="content_specification">
+                          <span class="checkbox__label">Техническая документация</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_management">
+                          <input type="checkbox" name="category[]" id="category_content_management" value="content_management">
+                          <span class="checkbox__label">Контент-менеджмент</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_content_other">
+                          <input type="checkbox" name="category[]" id="category_content_other" value="content_other">
+                          <span class="checkbox__label">Разное</span>
+                      </label>
+                  </li>
+              </ul>
+          </li>
+          <li class="category-group__folder">
+              <div class="category-group__name checkbox_flat">
+                  <div class="checkbox_pseudo js-checkbox_group"></div>
+                  <span class="link_dotted js-toggle">Маркетинг</span>
+              </div>
+              <ul class="sub-categories">
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_smm">
+                          <input type="checkbox" name="category[]" id="category_marketing_smm" value="marketing_smm">
+                          <span class="checkbox__label">SMM</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_seo">
+                          <input type="checkbox" name="category[]" id="category_marketing_seo" value="marketing_seo">
+                          <span class="checkbox__label">SEO</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_context">
+                          <input type="checkbox" name="category[]" id="category_marketing_context" value="marketing_context">
+                          <span class="checkbox__label">Контекстная реклама</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_email">
+                          <input type="checkbox" name="category[]" id="category_marketing_email" value="marketing_email">
+                          <span class="checkbox__label">E-mail маркетинг</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_research">
+                          <input type="checkbox" name="category[]" id="category_marketing_research" value="marketing_research">
+                          <span class="checkbox__label">Исследования рынка и опросы</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_sales">
+                          <input type="checkbox" name="category[]" id="category_marketing_sales" value="marketing_sales">
+                          <span class="checkbox__label">Продажи и генерация лидов</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_pr">
+                          <input type="checkbox" name="category[]" id="category_marketing_pr" value="marketing_pr">
+                          <span class="checkbox__label">PR-менеджмент</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_marketing_other">
+                          <input type="checkbox" name="category[]" id="category_marketing_other" value="marketing_other">
+                          <span class="checkbox__label">Разное</span>
+                      </label>
+                  </li>
+              </ul>
+          </li>
+          <li class="category-group__folder">
+              <div class="category-group__name checkbox_flat">
+                  <div class="checkbox_pseudo js-checkbox_group"></div>
+                  <span class="link_dotted js-toggle">Разное</span>
+              </div>
+              <ul class="sub-categories">
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_audit_analytics">
+                          <input type="checkbox" name="category[]" id="category_other_audit_analytics" value="other_audit_analytics">
+                          <span class="checkbox__label">Аудит и аналитика</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_consulting">
+                          <input type="checkbox" name="category[]" id="category_other_consulting" value="other_consulting">
+                          <span class="checkbox__label">Консалтинг</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_jurisprudence">
+                          <input type="checkbox" name="category[]" id="category_other_jurisprudence" value="other_jurisprudence">
+                          <span class="checkbox__label">Юриспруденция</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_accounting">
+                          <input type="checkbox" name="category[]" id="category_other_accounting" value="other_accounting">
+                          <span class="checkbox__label">Бухгалтерские услуги</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_audio">
+                          <input type="checkbox" name="category[]" id="category_other_audio" value="other_audio">
+                          <span class="checkbox__label">Аудио</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_video">
+                          <input type="checkbox" name="category[]" id="category_other_video" value="other_video">
+                          <span class="checkbox__label">Видео</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_engineering">
+                          <input type="checkbox" name="category[]" id="category_other_engineering" value="other_engineering">
+                          <span class="checkbox__label">Инженерия</span>
+                      </label>
+                  </li>
+                  <li class="sub-categories__item">
+                      <label class="checkbox_flat" for="category_other_other">
+                          <input type="checkbox" name="category[]" id="category_other_other" value="other_other">
+                          <span class="checkbox__label">Разное</span>
+                      </label>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    </dd>
+    <dt class="layout-block__title">Дополнительно</dt>
+        <dd class="layout-block__content">
+            <ul class="sub-categories sub-categories_user-filter">
+                <li class="sub-categories__item">
+                    <label class="checkbox_flat">
+                        <input type="checkbox" id="notify" value="1">
+                        <span class="checkbox__label">Отклики на заказы</span>
+                    </label>
+                </li>
+                <li class="sub-categories__item">
+                    <label class="checkbox_flat">
+                        <input type="checkbox" name="only_mentioned" id="only_mentioned" value="1">
+                        <span class="checkbox__label">От имеющих отзывы</span>
+                    </label>
+                </li>
+                <li class="sub-categories__item">
+                    <label class="checkbox_flat">
+                        <input type="checkbox" name="only_with_price" id="only_with_price" value="1">
+                        <span class="checkbox__label">С указанной стоимостью</span>
+                    </label>
+                </li>
+                <li class="sub-categories__item">
+                    <label class="checkbox_flat">
+                        <input type="checkbox" name="by_relevance" id="by_relevance" value="1">
+                        <span class="checkbox__label">Сортировать по релевантности</span>
+                    </label>
+                </li>
+            </ul>
+        </dd>
+        <div class="layout-block__footer">
+          <button name="button" type="submit" class="btn_green">Сохранить</button>
+          <a class="btn_grey" id="cancel" href="#cancel">Очистить</a>
+        </div>
+    </dl>
+</body>
+
+</html>

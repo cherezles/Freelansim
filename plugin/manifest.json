@@ -1,0 +1,21 @@
+{
+	"name": "Freelansim",
+	"description" : "Получай новые задачи мгновенно!",
+	"author": "JSus Dev",
+	"permissions": [
+		"notifications",
+		"storage",
+		"*://*/*"
+	],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"version": "1.4.88",
+	"manifest_version": 2,
+	"background": {
+      "scripts": ["main.js"]
+    },
+    "browser_action": {
+        "default_popup": "popup/index.html",
+        "default_title": "Freelansim",
+        "default_icon": "popup/logo.png"
+    }
+}
