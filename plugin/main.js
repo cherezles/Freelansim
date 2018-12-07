@@ -101,5 +101,12 @@ setInterval(() => {
 	}
 }, 1000)
 
-setInterval(main, 8000)
+setInterval(main, 30000)
 
+chrome.runtime.onInstalled.addListener(function(details){
+    if(details.reason == "install"){
+		window.open('https://github.com/JsusDev/Freelansim', '_blank')	
+    }else if(details.reason == "update"){
+        window.open('https://github.com/JsusDev/Freelansim', '_blank')
+    }
+});
