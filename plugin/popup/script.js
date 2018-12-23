@@ -1,3 +1,5 @@
+chrome.extension.sendMessage('clearNotify');
+
 $(document).ready(function(){
 
   $('.toggler').on('click', function(){ 

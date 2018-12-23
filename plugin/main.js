@@ -62,6 +62,29 @@ const checkNewTask = async body => {
 	return false
 }
 
+class CounterNotify {
+	constructor () {
+		this.counter = 0
+	}
+
+	render (text) {
+		chrome.browserAction.setBadgeText({
+			text: text.toString()
+		})
+	}
+
+	add () {
+		this.counter++
+		this.render(this.counter)
+	}
+
+	clear () {
+		this.counter = 0
+		this.render('')
+	}	
+}
+
+const counterNotify = new CounterNotify()
 
 
 const main = async tasks => {
@@ -82,9 +105,11 @@ const main = async tasks => {
 
 	if (await isAuth(body) && localStorage.notify == 'true') {
 		if (await checkNewNotify(body)) {
+			counterNotify.add();
 			(new Notification('Новый отклик!', {
 				icon: 'https://freelansim.ru/images/logo.png'
 			})).onclick = () => {
+				counterNotify.clear();
 				window.open('https://freelansim.ru/my/responses', '_blank')
 			}
 		}
@@ -109,4 +134,12 @@ chrome.runtime.onInstalled.addListener(function(details){
     }else if(details.reason == "update"){
         window.open('https://github.com/JsusDev/Freelansim', '_blank')
     }
+});
+
+chrome.browserAction.setBadgeBackgroundColor({
+	color: '#ea7e5d'
+})
+
+chrome.runtime.onMessage.addListener(() => {
+	counterNotify.clear()
 });
